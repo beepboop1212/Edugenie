@@ -4,17 +4,3 @@ fastapi "uvicorn[standard]" python-dotenv google-generativeai pydantic certifi "
 npx create-next-app@latest . --typescript --eslint --tailwind --src-dir --app --import-alias "@/*"
 
 npm install antd @ant-design/cssinjs @tanstack/react-query axios chart.js react-chartjs-2
-
-
-
-change the difficulty/context to dropdown menu,
-
-user login to show their analytics/num of quizzes done, with previously attempted quiz details/results and reports being viewable
-store completed quiz topics as badges, 
-
-Let's discuss about how to make a personalised learning path so that we can create multiple quizzes one after one with changing sub topics To complete the topic
-(u can ask for a approx length of path from user according to the timt they have)
-deploy link
-
-beautify UI
-git
