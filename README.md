@@ -1,6 +1,6 @@
 # EduGenie 🧞‍♂️
 
-**EduGenie is an intelligent, AI-powered learning platform designed to transform any study material into an interactive and engaging educational experience.**
+**EduGenie is an intelligent, AI-powered learning platform designed to transform any study material into an interactive and engaging educational experience. Tired of passively reading documents? With EduGenie, users can instantly generate personalized quizzes and dynamic, animated flashcards simply by providing a topic or uploading their own study files (PDF, DOCX, PPTX). Built with a powerful FastAPI backend and a modern Next.js frontend, EduGenie leverages the Google Gemini API to deliver context-aware content, complete with detailed explanations for quiz answers. It's not just a study tool; it's a personalized learning companion that adapts to your content.**
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
