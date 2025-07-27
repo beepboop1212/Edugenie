@@ -1,0 +1,70 @@
+/* frontend/src/app/flashcard.css */
+
+.flashcard-container {
+  perspective: 1200px;
+  width: 100%;
+  height: 350px;
+  cursor: pointer;
+}
+
+.flashcard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.flashcard-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column; /* Allow for subtext */
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  text-align: center;
+  border-radius: 12px; /* Slightly larger radius */
+  box-shadow: 0 8px 24px rgba(0, 58, 59, 0.1); /* Softer, themed shadow */
+}
+
+.flashcard-front {
+  background: #ffffff;
+  color: #333;
+}
+
+.flashcard-front::after {
+  content: 'Click to flip';
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.7em;
+  color: #aaa;
+  font-weight: 500;
+}
+
+.flashcard-back {
+  /* A subtle, professional gradient */
+  background: linear-gradient(135deg, #007A7C 0%, #004F50 100%);
+  color: #F9F9F9;
+  transform: rotateY(180deg);
+}
+
+/* Make the text inside the flashcard more responsive */
+.flashcard-face .ant-typography {
+  font-size: 1.6em;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.flashcard-back .ant-typography {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #F9F9F9;
+}
